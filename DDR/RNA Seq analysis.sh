@@ -1,5 +1,5 @@
 # Following are the commands used for the RNA Seq analysis.
-# The code shows analysis for one pair of paired end fastqc files.
+# The code shows analysis for one pair of paired-end fastqc files.
 
 #quality check using fastQC for all the files
 fastqc file_name.fastq.gz
