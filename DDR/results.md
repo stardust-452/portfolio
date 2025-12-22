@@ -1,5 +1,5 @@
 Due to the research work not being published yet, I am unable to share the results for this project. 
-<p>However, I have replicated RNA-Seq results from a paper published by Caijiao Yi, et al. in Journal of Neuroinflammation in 2022 using the DeSeq2 pipeline.</p>
+<p>However, I have replicated RNA-Seq results from a paper published by Caijiao Yi, et al. in Journal of Neuroinflammation in 2022 using their sequencing data analyzed using the DeSeq2 pipeline.</p>
 
 ![Replicated results](figure/rep.png)
 
