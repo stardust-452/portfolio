@@ -9,4 +9,4 @@ Hi! I am Nupur Upadhyay, a fourth-year BS-MS Biology major and Data Science mino
 <br>Projects: 
 <p>1. Sequencing-Based Analysis of Chemotherapy-Induced DNA Damage Response (DDR) </br></p>
 <p>2. Machine Learning projects</p>
-<p>Miscellaneous</p>
+<p>3. Miscellaneous</p>
