@@ -3,4 +3,5 @@ This folder contains course projects involving Machine Learning.
 This project used the Cancer prediction dataset from Kaggle to train supervised machine learning models like Random Forest, Support Vector Machine, Logistic Regression, etc. Two ensemble models of Weighted Average and Blending (data split)
 were implemented using Random Forest and Gradient Boosting algorithms. The ensembles achieved high accuracies ~94%. The code and report are shared here.
 
-<h3>2. Exploratory Data Analysis of Kaggle Datasets</h3>
+<h3>2. Dimensionality Reduction & Visualization of CNN architectures</h3>
+This project made use of dimensionality reduction techniques of PCA and t-SNE applied to the above project's cancer dataset. It also made use of the Visualkeras library to visualize CNN architectures like AlexNet, LeNet, etc.
