@@ -21,7 +21,7 @@ smallestGroupSize <- 4
 keep <- rowSums(counts(ddsHTSeq) >= 10) >= smallestGroupSize
 ddsHTSeq <- ddsHTSeq[keep,]
 
-#DEG analysi
+#DEG analysis
 dds <- DESeq(ddsHTSeq)
 res <- results(dds)
 resdata <- merge(as.data.frame(res), as.data.frame(counts(dds,normalized =TRUE)), by = 'row.names', sort = FALSE)
