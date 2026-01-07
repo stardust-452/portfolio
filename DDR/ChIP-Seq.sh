@@ -1,5 +1,4 @@
-#to be updated
-
+#ChIP Seq analysis
 #fastqc
 fastqc --no-extract R1.fq.gz R2.fastq.gz
 
