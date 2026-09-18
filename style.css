@@ -499,15 +499,4 @@ main {
 
 }
 
-/* background */
-
-body {
-  margin: 0;
-  background-image: url("bg_image.png");
-  background-size: cover;
-  background-position: center 0;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
-
 
