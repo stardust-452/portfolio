@@ -11,21 +11,3 @@ Hi! I am Nupur Upadhyay, a fifth-year (final year) BS-MS Biology major and Data 
 <p>2. Machine Learning projects</p>
 <p>3. Miscellaneous</p>
 
-<section id="projects" class="projects-section">
-  <div class="projects-container">
-
-    <div class="section-heading">
-      <span class="section-label">RESEARCH & PROJECTS</span>
-      <h2>Selected Projects</h2>
-      <p>
-        Explore my computational and bioinformatics projects,
-        including the methods, analysis, and code behind each one.
-      </p>
-    </div>
-
-    <div id="projects-container">
-      <p class="loading">Loading projects...</p>
-    </div>
-
-  </div>
-</section>
