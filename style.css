@@ -244,3 +244,15 @@ main {
 
 }
 
+/* background */
+
+body {
+  margin: 0;
+  background-image: url("https://ctsi.osu.edu/sites/default/files/styles/16_9/public/2024-08/iStock-1791575716.jpg.webp?itok=Fg_1z4oH");
+  background-size: cover;
+  background-position: center 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+
