@@ -1,9 +1,34 @@
-* {
-  box-sizing: border-box;
+/* ========================================
+   DARK MODE BASE
+======================================== */
+
+:root {
+  --bg: #080a0f;
+  --card: rgba(15, 18, 25, 0.82);
+  --card-hover: rgba(22, 26, 35, 0.9);
+
+  --text: #f1f3f5;
+  --text-secondary: #a6adb8;
+  --text-muted: #737b87;
+
+  --border: rgba(255, 255, 255, 0.12);
+
+  --accent: #8ab4ff;
+}
+
+
+/* ========================================
+   BODY + BACKGROUND
+======================================== */
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   margin: 0;
+
+  color: var(--text);
 
   font-family:
     -apple-system,
@@ -11,233 +36,463 @@ body {
     "Segoe UI",
     sans-serif;
 
-  background: #f7f7f7;
-  color: #222;
+  background-color: var(--bg);
+
+  background-image:
+    linear-gradient(
+      rgba(5, 7, 12, 0.72),
+      rgba(5, 7, 12, 0.82)
+    ),
+    url("images/background.jpg");
+
+  background-size: cover;
+  background-position: center 0;
+  background-attachment: fixed;
+
+  transition: background-image 1s ease;
 }
 
 
-/* HEADER */
+/* ========================================
+   OPTIONAL DARK OVERLAY
+======================================== */
+
+body::before {
+  content: "";
+
+  position: fixed;
+  inset: 0;
+
+  background:
+    radial-gradient(
+      circle at 50% 0%,
+      rgba(70, 100, 160, 0.10),
+      transparent 45%
+    );
+
+  pointer-events: none;
+
+  z-index: -1;
+}
+
+
+/* ========================================
+   HEADER
+======================================== */
 
 header {
   max-width: 1000px;
+
   margin: 0 auto;
-  padding: 80px 20px 50px;
+
+  padding: 120px 20px 80px;
 }
 
 header h1 {
-  font-size: 3rem;
-  margin-bottom: 10px;
+  color: white;
+
+  font-size: 3.5rem;
+
+  margin-bottom: 15px;
 }
 
 header p {
-  color: #666;
+  color: var(--text-secondary);
+
+  font-size: 1.1rem;
 }
 
 
-/* PROJECT SECTION */
+/* ========================================
+   PROJECT SECTION
+======================================== */
 
 main {
   max-width: 1000px;
+
   margin: auto;
-  padding: 0 20px 100px;
+
+  padding: 0 20px 120px;
 }
 
 #projects h2 {
-  font-size: 2rem;
-  margin-bottom: 30px;
+  color: white;
+
+  font-size: 2.4rem;
+
+  margin-bottom: 35px;
 }
 
 
-/* PROJECT CARD */
+/* ========================================
+   PROJECT CARD
+======================================== */
 
 .project-card {
-  background: white;
 
-  border: 1px solid #ddd;
-  border-radius: 16px;
+  background: var(--card);
+
+  border: 1px solid var(--border);
+
+  border-radius: 18px;
 
   margin-bottom: 20px;
 
   overflow: hidden;
 
-  transition: 0.25s ease;
+  /* Glass effect */
+
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  transition:
+    transform 0.3s ease,
+    background 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
 }
+
 
 .project-card:hover {
-  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+
+  transform: translateY(-4px);
+
+  background: var(--card-hover);
+
+  border-color:
+    rgba(255, 255, 255, 0.2);
+
+  box-shadow:
+    0 20px 60px rgba(0, 0, 0, 0.35);
 }
 
 
-/* CLICKABLE PART */
+/* ========================================
+   PROJECT HEADER
+======================================== */
 
 .project-header {
+
   width: 100%;
 
   padding: 30px;
 
-  border: none;
-  background: white;
-
   display: flex;
+
   justify-content: space-between;
+
+  align-items: flex-start;
+
+  border: none;
+
+  background: transparent;
+
+  color: white;
 
   text-align: left;
 
   cursor: pointer;
 }
 
+
 .project-header h3 {
-  font-size: 1.4rem;
-  margin: 8px 0;
+
+  color: white;
+
+  font-size: 1.45rem;
+
+  line-height: 1.4;
+
+  margin: 8px 0 12px;
 }
+
 
 .project-description {
-  color: #666;
-  line-height: 1.6;
+
+  color: var(--text-secondary);
+
+  line-height: 1.7;
+
+  margin: 0;
 }
+
 
 .project-number {
+
+  color: var(--text-muted);
+
   font-size: 0.75rem;
-  color: #999;
+
+  letter-spacing: 0.1em;
 }
 
 
-/* PLUS */
+/* ========================================
+   PLUS BUTTON
+======================================== */
 
 .project-toggle {
-  font-size: 2rem;
-  color: #777;
+
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
 
   margin-left: 20px;
+
+  border:
+
+    1px solid
+    rgba(255, 255, 255, 0.2);
+
+  border-radius: 50%;
+
+  color: #ddd;
+
+  font-size: 1.5rem;
 
   transition: transform 0.3s ease;
 }
 
-.project-card.open .project-toggle {
+
+.project-card.open
+.project-toggle {
+
   transform: rotate(45deg);
 }
 
 
-/* COLLAPSIBLE CONTENT */
+/* ========================================
+   COLLAPSIBLE CONTENT
+======================================== */
 
 .project-content {
+
   display: grid;
 
   grid-template-rows: 0fr;
 
-  transition: grid-template-rows 0.4s ease;
+  transition:
+    grid-template-rows 0.45s ease;
 }
 
+
 .project-content-inner {
+
   overflow: hidden;
 
   padding: 0 30px;
+
 }
 
-.project-card.open .project-content {
+
+.project-card.open
+.project-content {
+
   grid-template-rows: 1fr;
 }
 
-.project-card.open .project-content-inner {
-  padding-bottom: 30px;
+
+.project-card.open
+.project-content-inner {
+
+  padding-bottom: 35px;
 }
 
 
-/* README */
+/* ========================================
+   README
+======================================== */
 
 .project-readme {
-  border-top: 1px solid #eee;
 
-  padding-top: 25px;
+  border-top:
+    1px solid var(--border);
 
-  line-height: 1.7;
+  padding-top: 30px;
+
+  color: var(--text-secondary);
+
+  line-height: 1.8;
 }
+
 
 .project-readme h4,
 .project-files h4 {
+
+  color: var(--text-muted);
+
   font-size: 0.75rem;
-  letter-spacing: 0.12em;
 
-  color: #888;
+  letter-spacing: 0.15em;
+
+  margin-bottom: 20px;
 }
 
-.readme-content img {
-  max-width: 100%;
+
+.readme-content h1,
+.readme-content h2,
+.readme-content h3 {
+
+  color: white;
+
+  margin-top: 30px;
 }
+
+
+.readme-content p {
+
+  color: var(--text-secondary);
+
+  line-height: 1.8;
+}
+
+
+.readme-content a {
+
+  color: var(--accent);
+}
+
+
+.readme-content code {
+
+  background:
+    rgba(255, 255, 255, 0.08);
+
+  color: #ddd;
+
+  padding: 3px 6px;
+
+  border-radius: 4px;
+}
+
 
 .readme-content pre {
-  background: #222;
-  color: white;
+
+  background: #050608;
+
+  border:
+    1px solid
+    rgba(255, 255, 255, 0.1);
 
   padding: 20px;
 
-  border-radius: 8px;
+  border-radius: 10px;
 
   overflow-x: auto;
 }
 
 
-/* FILES */
+/* ========================================
+   FILES
+======================================== */
 
 .project-files {
-  border-top: 1px solid #eee;
+
+  border-top:
+    1px solid var(--border);
 
   margin-top: 30px;
-  padding-top: 25px;
+
+  padding-top: 30px;
 }
+
 
 .file-item {
+
   display: block;
 
-  padding: 9px 12px;
+  padding: 10px 12px;
 
-  color: #444;
+  color: var(--text-secondary);
 
   text-decoration: none;
-
-  border-radius: 6px;
-}
-
-.file-item:hover {
-  background: #f3f3f3;
-}
-
-
-/* GITHUB BUTTON */
-
-.github-button {
-  display: inline-block;
-
-  margin-top: 25px;
-
-  padding: 10px 16px;
-
-  background: #222;
-  color: white;
 
   border-radius: 7px;
 
-  text-decoration: none;
+  transition:
+    background 0.2s ease,
+    color 0.2s ease;
 }
+
+
+.file-item:hover {
+
+  background:
+    rgba(255, 255, 255, 0.06);
+
+  color: white;
+}
+
+
+/* ========================================
+   GITHUB BUTTON
+======================================== */
+
+.github-button {
+
+  display: inline-block;
+
+  margin-top: 30px;
+
+  padding: 11px 18px;
+
+  border-radius: 8px;
+
+  background: white;
+
+  color: #111;
+
+  text-decoration: none;
+
+  font-size: 0.9rem;
+
+  transition: 0.2s ease;
+}
+
 
 .github-button:hover {
-  background: #444;
+
+  background: #dce5f5;
+
+  transform: translateY(-2px);
 }
 
 
-/* MOBILE */
+/* ========================================
+   MOBILE
+======================================== */
 
 @media (max-width: 600px) {
 
+  header {
+
+    padding:
+      80px 20px 60px;
+  }
+
   header h1 {
-    font-size: 2.2rem;
+
+    font-size: 2.3rem;
   }
 
   .project-header {
+
     padding: 22px;
   }
 
+  .project-header h3 {
+
+    font-size: 1.2rem;
+  }
+
   .project-content-inner {
+
     padding-left: 22px;
     padding-right: 22px;
   }
