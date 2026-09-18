@@ -221,11 +221,3 @@ async function loadProjects() {
 
 
 loadProjects();
-
-//background
-window.addEventListener("scroll", () => {
-  const scrollPosition = window.scrollY;
-
-  document.body.style.backgroundPosition =
-    `center ${scrollPosition * 0.3}px`;
-});
