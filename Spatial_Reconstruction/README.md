@@ -1,5 +1,9 @@
 ## Spatial reconstruction of single-cell RNA-Seq data using deep learning based tools
 
+[![iSORT](https://img.shields.io/badge/iSORT-Spatial%20Reconstruction-4C78A8.svg)]()
+[![LUNA](https://img.shields.io/badge/LUNA-Spatial%20Reconstruction-9B59B6.svg)]()
+[![CellTypist](https://img.shields.io/badge/CellTypist-Cell%20Annotation-2E8B57.svg)]()
+
 ### Research question: Is it possible to obtain spatial information for single-cell RNA-Seq data using a deep-learning based model trained on a spatial transcriptomics dataset?
 - Preprocessed different single-cell RNA seq and spatial Transcriptomics datasets from Drosophila and Mice.
 - Used the tools - LUNA and iSORT for model training on spatial data, followed by spatial reconstruction of single-cell RNA-Seq data.
