@@ -20,6 +20,6 @@ Additionally, the study involved a haplotype-resolved genome assembly of Sunandi
 - Functionally classified and annotated genes using Gene Ontology (GO) and pathway enrichment tools, focusing on milk yield, immunity, and disease resistance traits.
 - Performed extensive literature review on cattle admixture and bovine genomic analysis.
 
-**Results:** Identified key variants linked to higher milk yield (taurine) and disease resistance (indicus); functionally characterized genes contributing to these traits.
+**Results:** Identified key variants linked to higher milk yield (taurine) and disease resistance (indicus); functionally characterized genes contributing to these traits and created interaction networks.
 
 #### Publication: https://www.biorxiv.org/content/10.64898/2026.02.05.704058v1 (preprint; accepted in iScience)
