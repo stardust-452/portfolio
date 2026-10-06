@@ -1,122 +1,74 @@
 ## Hi, I'm Nupur Upadhyay
 
-| **Bioinformatics \| Genomics \| Computational Biology** |
+| **Bioinformatics \| Genomics \| Machine Learning** |
 |:-------------------------------------------------------:|
 
 #### Table of Contents
 - [About me](#about)
 - [Research Projects](#projects)
 - [Coursework Projects](#coursework)
-- [Skills](#skills)
 - [Contact](#contact)
-- [References](#ref)
   
 ### About me <a name = "about"></a>
 I am a fifth-year Master's student at **IISER Thiruvananthapuram (IISER TVM), India,** currently completing my Master's thesis at **IGFL- ENS de Lyon, France**. My work focuses on computational approaches to genomics, with particular interests in transcriptomics, DNA damage response, single-cell and spatial transcriptomics, and machine learning for biological data analysis.
 
-This GitHub portfolio contains selected research and computational projects developed throughout my degree. The repositories document the analyses, workflows, code, and methods used in each project.
+This GitHub portfolio contains research and computational projects developed throughout my degree. The repositories document the analyses, workflows, code, and methods used in each project.
 
-### Selected Research Projects <a name = "projects"></a>
-1. Sequencing-Based Analysis of Chemotherapy-Induced DNA Damage Response
+### Research Projects <a name = "projects"></a>
+#### 1. Sequencing-Based Analysis of Chemotherapy-Induced DNA Damage Response
 
 A computational analysis investigating the molecular response to chemotherapy-induced DNA damage using high-throughput sequencing data.
 
-Methods: RNA-seq / ChIP-seq / differential expression / pathway analysis / visualization
+Methods: RNA-seq, ChIP-seq, differential expression, pathway analysis, visualization
 
 Tools: R, Python, Linux, FastQC, Fastp, STAR, BWA, Samtools, MACS2, DESeq2
 
-2. Machine Learning for Biological Data
+**2. Comparative Genomic Study of differences between Indian Indicine vs European Taurine**
 
-A collection of machine-learning projects exploring the application of computational models to biological datasets.
+Studying genomic difference between Indian Indicine adapted to tropical climate and European Taurine adapted to the temperate regions.
 
-Methods: supervised learning, neural networks, model evaluation and visualization
+Methods: Protein interaction networks, Visualization, Functional annotation
 
-Tools: Python, Scikit-learn, TensorFlow, Keras, Visualkeras
+Tools: Cytoscape, ClueGO, STRING, ggplot2, GO
 
-→ View projects
+**3. Cow breed classification using Machine Learning**
 
-3. Single-Cell and Spatial Transcriptomics
+Classifying Indian cow breeds from a small set of SNPs using Machine Learning models.
 
-Projects involving the analysis and visualization of single-cell and spatially resolved transcriptomic datasets.
+Methods: dimensionality reduction, supervised ML, feature selection, hyperparameter optimization
+Tools: Python, scikit-learn, optuna, UMAP, matplotlib
 
-Methods: dimensionality reduction, clustering, cell-type analysis, spatial analysis and visualization
+**4. Spatial reconstruction of single-cell RNA-Seq data using deep learning based tools (Ongoing)**
 
-Tools: R, Python, ggplot2, matplotlib, seaborn
+Prediction of spatial information (coordinates) for single-cell RNA-Seq data using deep-learning based models trained on a spatial transcriptomics dataset.
 
-→ View project repository
+Methods: deep learning, model testing
+Tools: LUNA, iSORT, celltypist
 
-4. Miscellaneous Computational Biology Projects
+**5. motif discovery and comparison for SREBP1 and SREBP2 (Ongoing)**
 
-Additional projects developed during my degree covering bioinformatics workflows, sequencing data analysis, visualization and computational biology.
+Discovery of motifs determining whether a gene is controlled by the sterol regulatory element binding protein, SREBP1 or SREBP2 or both.
 
-→ View projects
+Methods: RNA-Seq, ChIP-Seq, motif discovery, motif scan
+Tools: DESeq2, Tomtom, STREME, MEME
 
 ### Coursework Projects <a name = "coursework"></a>
+This directory contains the projects done as a part of credits for my degree.
 
-### Technical Skills <a name = "skills"></a>
-Programming
+**1. Cancer Diagnosis Prediction using Machine Learning**
+ 
+Training supervised machine learning models and an ensemble model on the Cancer prediction dataset from Kaggle for prediction of cancer diagnosis.
 
-R: statistical analysis, RNA-seq analysis, visualization
+Methods: Supervised ML, Ensemble model
+Tools: Python, scikit-learn, matplotlib
 
-Python: data analysis, machine learning and visualization
 
-Bash/Linux: command-line analysis and workflow development
-
-Genomics & Bioinformatics
-
-Bulk RNA-seq
-
-scRNA-seq
-
-Spatial transcriptomics
-
-ChIP-seq
-
-Differential expression analysis
-
-Sequencing quality control
-
-Alignment and genomic data processing
-
-Tools
-
-FastQC · Fastp · BWA · STAR · Samtools · MACS2 · DESeq2
-
-Machine Learning
-
-Scikit-learn · TensorFlow · Keras · Visualkeras
-
-Visualization
-
-ggplot2 · matplotlib · seaborn
 
 ### Research Interests
 
-Genomics and transcriptomics
-
-DNA damage response and cancer biology
-
-Bulk RNA-seq and single-cell RNA-seq
-
-Spatial transcriptomics
-
-ChIP-seq and epigenomics
-
-Machine learning for biological data
-
-Computational methods for high-throughput sequencing data
-
-
-Research & Open-Source Interests
-
-I am particularly interested in computational approaches that integrate genomic, transcriptomic and spatial data to investigate biological mechanisms and disease-associated processes.
+I am particularly interested in computational approaches that integrate multimodal and/or multiomics data to investigate biological mechanisms and disease-associated processes.
 
 I am also interested in developing and applying reproducible computational workflows and machine-learning methods to complex biological datasets.
-
-### References <a name = "projects"></a>
-
-iSORT
- — Transfer-learning-based spatial reconstruction tool
 
 ### Contact <a name = "contact"></a>
 
