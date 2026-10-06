@@ -1,4 +1,4 @@
-## Spatial reconstruction of single-cell RNA-Seq data using deep learning based tools
+## Spatial reconstruction of single-cell RNA-Seq data using deep learning based tools [![Ongoing](https://img.shields.io/badge/Ongoing-1E850F.svg)]()
 
 [![iSORT](https://img.shields.io/badge/iSORT-Spatial%20Reconstruction-4C78A8.svg)]()
 [![LUNA](https://img.shields.io/badge/LUNA-Spatial%20Reconstruction-9B59B6.svg)]()
