@@ -10,7 +10,7 @@
 - [Contact](#contact)
   
 ### About me <a name = "about"></a>
-I am a fifth-year Master's student at **IISER Thiruvananthapuram (IISER TVM), India,** currently completing my Master's thesis at **IGFL- ENS de Lyon, France**. My work focuses on computational approaches to genomics, with particular interests in transcriptomics, DNA damage response, single-cell and spatial transcriptomics, and machine learning for biological data analysis.
+I am a fifth-year Master's student at **IISER Thiruvananthapuram (IISER TVM), India,** currently completing my Master's thesis at **IGFL- ENS de Lyon, France**. My work focuses on Computational Genomics, with particular interests in Disease & Developmental mechanisms and machine learning for biological data analysis.
 
 This GitHub portfolio contains research and computational projects developed throughout my degree. The repositories document the analyses, workflows, code, and methods used in each project.
 
