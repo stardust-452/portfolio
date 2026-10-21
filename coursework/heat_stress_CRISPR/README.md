@@ -8,3 +8,6 @@
 [![ViDGER](https://img.shields.io/badge/ViDGER-Visualization-FF1493.svg)]()
 
 ### Research question: What happens to the transcription of CRISPR genes with heat stress in Mycobacterium tuberculosis?
+- Analyzed RNA-Seq data (n=4) for M. tuberculosis under heat stress.
+- Visualized the results in ViDGER.
+- Compared the expression of CRISPR genes before and after heat stress.
