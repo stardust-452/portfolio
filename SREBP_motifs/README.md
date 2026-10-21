@@ -11,7 +11,7 @@
 While the motifs that SREBP proteins bind to are known but how are some genes controlled by SREBP1 and some by SREBP2, given that their known motifs are similar, is not known yet. This project aims to find the subsequences/motifs that determine the control and then predict the genes controlled by SREBP1,
 SREBP2, or both SREBP1 and 2.
 
-- Analyzed public available SREBP 1 & 2 knockout RNA-seq data (n=9)
+- Analyzed publicly available SREBP 1 & 2 knockout RNA-seq data (n=9)
 - Performed Over representation analysis (ORA) in R using ClusterProfiler.
 - Extracted peaks for SREBP 1 & 2  ChIP-Seq data from ENCODE and intersect the positions with the promoters of DEGs from the RNA-seq analysis and split them into groups based on peak binding.
 - Scanned the promoters for SREBP motifs using FIMO.
