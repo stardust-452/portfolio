@@ -1,5 +1,9 @@
-This folder contains course projects involving Machine Learning.
-<h3>1. Cancer Prediction</h3>
+## Cancer Prediction
+
+[![Scikit-learn](https://img.shields.io/badge/Scikit--learn-Machine%20Learning-074009.svg)]()
+[![Matplotlib](https://img.shields.io/badge/Matplotlib-Visualization-11557C.svg)]()
+[![Kaggle](https://img.shields.io/badge/Kaggle-Datasets-6A5ACD.svg)]()
+
 This project used the Cancer prediction dataset from Kaggle to train supervised machine learning models like Random Forest, Support Vector Machine, Logistic Regression, etc. Two ensemble models of Weighted Average and Blending (data split)
 were implemented using Random Forest and Gradient Boosting algorithms. The ensembles achieved high accuracies ~94%. The code and report are shared here.
 
