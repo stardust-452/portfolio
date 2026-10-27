@@ -23,3 +23,14 @@ annotatePeaks.pl SREBF2_ChIP-Seq.bed hg38 > SREBF2_annot.txt
 #motif discovery using HOMER
 findMotifsGenome.pl SREBF1_ChIP-Seq_centered_300bp.bed hg38 motif_dicovery_SREBF1_homer/ -size 300 -mask
 findMotifsGenome.pl SREBF2_ChIP-Seq_centered_300bp.bed hg38 motif_dicovery_SREBF2_homer/ -size 300 -mask
+
+#MEME-ChIP
+#dir MEME-ChIP_analysis
+
+#Center peaks to 500bp
+./peak_center_meme.sh /STORAGE/NUPUR/SREBF_project/HOMER_analysis/SREBF1_ChIP-Seq.bed 
+./peak_center_meme.sh /STORAGE/NUPUR/SREBF_project/HOMER_analysis/SREBF2_ChIP-Seq.bed 
+
+#extract seq as fasta
+homerTools extract SREBF2_ChIP-Seq_centered_500bp.bed /home/iisertvm/anaconda3/envs/homer_env/share/homer/data/genomes/hg38 -fa > SREBF2_ChIP_500bp_fasta.fa
+homerTools extract SREBF1_ChIP-Seq_centered_500bp.bed /home/iisertvm/anaconda3/envs/homer_env/share/homer/data/genomes/hg38 -fa > SREBF1_ChIP_500bp_fasta.fa
