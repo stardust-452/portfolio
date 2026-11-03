@@ -34,3 +34,13 @@ findMotifsGenome.pl SREBF2_ChIP-Seq_centered_300bp.bed hg38 motif_dicovery_SREBF
 #extract seq as fasta
 homerTools extract SREBF2_ChIP-Seq_centered_500bp.bed /home/iisertvm/anaconda3/envs/homer_env/share/homer/data/genomes/hg38 -fa > SREBF2_ChIP_500bp_fasta.fa
 homerTools extract SREBF1_ChIP-Seq_centered_500bp.bed /home/iisertvm/anaconda3/envs/homer_env/share/homer/data/genomes/hg38 -fa > SREBF1_ChIP_500bp_fasta.fa
+
+#resolve the path issue with perl
+export PERL5LIB="$CONDA_PREFIX/lib/perl5/site_perl:$CONDA_PREFIX/lib/perl5/5.32/site_perl"
+
+#check if treebuilder is working
+perl -MHTML::TreeBuilder -e 'print "HTML::TreeBuilder working successfully!\n"'
+
+#meme-chip
+meme-chip SREBF1_ChIP_500bp_fasta.fa -oc motif_discovery_SREBF1_meme
+meme-chip SREBF2_ChIP_500bp_fasta.fa -oc motif_discovery_SREBF2_meme
