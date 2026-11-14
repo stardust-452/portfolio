@@ -14,7 +14,7 @@ $3=="gene"{
   print $1,$4-2001,$4+500,$10,".",$7;
  else
   print $1,$5-500,$5+2000,$10,".",$7;
-}' genes.gtf > SREBF2_promoters.bed
+}' SREBF2_genes_coor.gtf > SREBF2_promoters.bed
 
 #get ChIP-Seq IDR data as BED from ENCODE
 gunzip file.bed.gz 
