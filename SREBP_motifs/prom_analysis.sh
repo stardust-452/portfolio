@@ -23,7 +23,29 @@ sed 's/^chr//' prom_2_prom_coord.bed > nochr_prom_2_prom_coord.bed
 bedtools getfasta -fi /STORAGE/AC16_ribo_deplete_transcriptome/genome/Homo_sapiens.GRCh38.dna.primary_assembly.fa -bed  nochr_prom_2_prom_coord.bed -fo seq_prom2.fa -s -nameOnly
 
 #split into individual gene file using seqkit
-seqkit grep -p "ENSG00000108679.14" seq_prom2.fa > LGALS3BP.fa
-seqkit grep -p "ENSG00000125851.11" seq_prom2.fa > PCSK2.fa
+awk '/^>/{n++; file="sequence" n ".fa"} {print > file}' seq_prom2.fa
 
-#motif analysis
+#rename files
+mv sequence1.fa LGALS3BP.fa
+mv sequence2.fa PCSK2.fa
+
+#pick a random gene from the background set to use as a control
+seqkit sample -n 1 -s 100 bg_genes_promoter_seq.fa -o control_prom.fa
+
+#get the filtered motif meme files for SREBP1 and SREBP2
+conda activate meme
+
+#motif analysis using FIMO (looping)
+#SREBP1
+for f in LGALS3BP.fa PCSK2.fa control_prom.fa
+do
+    name=$(basename "$f" .fa)
+    fimo --thresh 1e-4 --oc "SREBP1_${name}" SREBF1_filtered.meme "$f"
+done
+
+#SREBP2
+for f in LGALS3BP.fa PCSK2.fa control_prom.fa
+do
+    name=$(basename "$f" .fa)
+    fimo --thresh 1e-4 --oc "SREBP2_${name}" SREBF2_filtered.meme "$f"
+done
